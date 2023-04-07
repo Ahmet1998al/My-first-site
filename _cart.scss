@@ -1,0 +1,291 @@
+@-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+              transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+              transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+              transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+              transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+              transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  @keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+              transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+              transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+              transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+              transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+              transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  
+
+.top_cart {
+    height: 400px;
+    background-image: url(img/topcart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading_big {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+    margin-top: 127px;
+}
+
+.link-box{
+    padding-top: 32px;
+}
+
+.super{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-top: 39px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &_name-box{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &_item{
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &_form {
+        background: #F7F6F6;
+        border-radius: 20px;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 42px;
+    }
+
+    &_content{
+        grid-column: span 8;
+    }
+
+    &_left{
+        display: flex;
+        gap: 32px;
+    }
+
+    &_product_name{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    &_product_text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        margin-bottom: 12px;
+    }
+
+    &_product_prise{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #050505;
+    }
+
+
+    &_info{
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &_link-box{
+        display: flex;
+        gap: 30px;
+    }
+
+
+    &_bot{
+    text-decoration-line: underline;
+    color:  #000000;
+    }
+
+    &_bot:hover{
+    text-decoration-line:underline;
+    color: silver;
+    }
+    
+
+    &_input{
+        background: #F7F6F6;
+        border-radius: 6px;
+        width: 71px;
+        height: 51px;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+
+   
+    &_sos{
+        line-height: 36px;
+        margin-bottom: 35px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+    }
+  
+
+    &_input2{
+        font-family: inherit;
+        width: 288px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        border-bottom: 1px solid #CACDD8;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 41px;
+        color: inherit;
+        background-color: inherit;
+        outline: none;
+        margin-left: 27px;
+    }
+
+    &_input2::placeholder{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    &-sale{
+        text-align: center;
+    }
+   
+    &_span{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #000000;
+        margin-top: 64px;
+        margin-bottom: 18px;
+    }
+
+    &_money{
+        background:#F7F6F6;
+        border-radius: 20px;
+        width: 275px;
+        height: 46px;
+        box-sizing: border-box;
+        margin-top: 18px;
+        transition:all .3s;
+        animation: wobble-hor-bottom 0.8s 3s 2 both;
+        }
+
+        &_money:hover{
+            color: #FFFFFF;
+            background: #000000;
+        }
+ 
+
+    &-wer{
+        background:#F7F6F6;  
+        border-radius: 50px;
+        box-sizing: border-box;
+        width: 200px;
+        height: 37px;
+        border: 1px solid #000000;
+        transition: all .3s;
+    }
+
+    &-wer:hover{
+        color: #FFFFFF;
+        background: #000000;
+    }
+
+    .link-box{
+        padding-top: 32px;
+    }
+
+    .super{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: #000000;
+        margin-top: 39px;
+    }
+}
+ 
